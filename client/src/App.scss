@@ -1,0 +1,110 @@
+.App{
+    background-image: url("./ai.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.chat-box{
+    background-color: transparent;
+    height: 600px;
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.header{
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding: 1.2rem;
+    h4{
+
+    }
+}
+
+.body{
+    height: 83%;
+    overflow-y: scroll;
+
+    ::-webkit-scrollbar{
+        width: 0px;
+        height: 100%;
+    }
+  
+}
+
+.messages{
+    .message-row{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .message-row.user{
+        .message{
+            background-color: #153458;
+        }
+    
+    }
+    .message-row.bot{
+        justify-content: flex-start;
+        .message{
+            background-color: #346634;
+        }
+    }
+    
+    .message{
+        border-radius: 50px;
+        text-align: center;
+        margin: 10px;
+
+        p{
+            color: white;
+            padding: 10px;  
+        }
+    }
+}
+
+
+
+
+
+.footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 95%;
+        margin: 0 auto;
+
+        input{
+            width: 80%;
+            height: 30px;
+            background-color: transparent;
+            border: 1px solid gray;
+            color: white;
+            padding-left: 10px;
+        }
+
+        button{
+            background-color:blue;
+            border: 0;
+            color: white;
+            padding: 10px;
+            // margin-bottom: 12px;
+            opacity: 0.8;
+
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+}
